@@ -2,6 +2,9 @@ package ch8;
 
 import java.util.Arrays;
 
+/**
+ * @author lucy
+ */
 public class DynamicArray<E> {
     private static final int DEFAULT_CAPACITY = 10;
     private int size;

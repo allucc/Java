@@ -1,5 +1,8 @@
 package ch3;
 
+/**
+ * @author lucy
+ */
 public class Product {
     private String id;
     private String name;

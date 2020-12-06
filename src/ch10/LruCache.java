@@ -3,10 +3,13 @@ package ch10;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class LRUCache<K, V> extends LinkedHashMap<K, V> {
+/**
+ * @author lucy
+ */
+public class LruCache<K, V> extends LinkedHashMap<K, V> {
     private int maxEntries;
 
-    public LRUCache(int maxEntries) {
+    public LruCache(int maxEntries) {
         super(16, 0.75f, true);
         this.maxEntries = maxEntries;
     }

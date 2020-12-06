@@ -2,6 +2,9 @@ package ch11;
 
 import java.util.*;
 
+/**
+ * @author lucy
+ */
 public class Median<E> {
     private PriorityQueue<E> minP;
     private PriorityQueue<E> maxP;

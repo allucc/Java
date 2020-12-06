@@ -4,6 +4,9 @@ import ch10.Size;
 
 import java.util.*;
 
+/**
+ * @author lucy
+ */
 public class Test {
     public static void main(String[] args) {
         Set<Day> weekend = EnumSet.noneOf(Day.class);

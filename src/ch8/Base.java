@@ -1,5 +1,8 @@
 package ch8;
 
+/**
+ * @author lucy
+ */
 public class Base implements Comparable<Base> {
     private int sortOrder;
 

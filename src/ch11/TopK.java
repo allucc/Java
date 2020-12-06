@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.PriorityQueue;
 
+/**
+ * @author lucy
+ */
 public class TopK<E> {
     private PriorityQueue<E> p;
     private int k;

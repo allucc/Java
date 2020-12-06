@@ -1,5 +1,8 @@
 package ch6;
 
+/**
+ * @author lucy
+ */
 public class ExceptionTest {
     public static void main(String[] args) {
         if (args.length < 1) {

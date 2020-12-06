@@ -1,5 +1,8 @@
 package ch3;
 
+/**
+ * @author lucy
+ */
 public class Shape {
     private static final String DEFAULT_COLOR = "black";
     private String color;

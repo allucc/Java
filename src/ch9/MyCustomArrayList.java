@@ -1,7 +1,8 @@
 package ch9;
 
-import java.util.Arrays;
-
+/**
+ * @author lucy
+ */
 public class MyCustomArrayList<E> {
 //    private transient Object[] elementData;
 //    private int size;

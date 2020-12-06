@@ -1,5 +1,8 @@
 package ch3;
 
+/**
+ * @author lucy
+ */
 public class OrderItem {
     private Product product;
     private int quantity;

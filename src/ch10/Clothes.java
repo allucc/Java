@@ -1,5 +1,8 @@
 package ch10;
 
+/**
+ * @author lucy
+ */
 public class Clothes {
     String id;
     Size size;

@@ -1,5 +1,8 @@
 package ch4;
 
+/**
+ * @author lucy
+ */
 public class Base {
     public static int s;
     private int a;

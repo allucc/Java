@@ -1,5 +1,8 @@
 package ch4;
 
+/**
+ * @author lucy
+ */
 public class Child extends Base {
     public static int s;
     private int a;
