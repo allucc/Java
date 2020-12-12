@@ -1,25 +1,28 @@
 package ch13;
 
 import java.io.*;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * @author lucy
  */
 public class Test {
     public static void main(String[] args) throws IOException {
-        List<Student> students = Arrays.asList(new Student[]{
-                new Student("lucy", 18, 80.9d), new Student("李四", 17, 67.5d)
+        File f = new File(".");
+        File[] files = f.listFiles(new FilenameFilter() {
+            @Override
+            public boolean accept(File dir, String name) {
+                if (name.endsWith(".txt")) {
+                    return true;
+                }
+                return false;
+            }
         });
-        writeStudents(students);
-        for (Student s : students) {
-            System.out.println(s.getAge());
-            System.out.println(s.getName());
-            System.out.println(s.getScore());
+        for (File ele : files) {
+            System.out.println(ele.getName());
         }
     }
 
