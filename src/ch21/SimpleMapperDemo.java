@@ -6,6 +6,7 @@ import java.lang.reflect.Field;
 /**
  * @author lucy
  */
+@SuppressWarnings("deprecation")
 public class SimpleMapperDemo {
     static class Student {
         String name;
@@ -57,12 +58,12 @@ public class SimpleMapperDemo {
         try {
             Class<?> cls = obj.getClass();
             StringBuilder sb = new StringBuilder();
-            sb.append(cls.getName() + "\n");
+            sb.append(cls.getName()).append("\n");
             for (Field f : cls.getDeclaredFields()) {
                 if (!f.isAccessible()) {
                     f.setAccessible(true);
                 }
-                sb.append(f.getName() + "=" + f.get(obj).toString() + "\n");
+                sb.append(f.getName()).append("=").append(f.get(obj).toString()).append("\n");
             }
             return sb.toString();
         } catch (IllegalAccessException e) {
@@ -119,8 +120,7 @@ public class SimpleMapperDemo {
             f.set(obj, value);
         } else {
             Constructor<?> ctor = type.getConstructor(
-                    new Class[]{String.class}
-            );
+                    String.class);
             f.set(obj, ctor.newInstance(value));
         }
 
