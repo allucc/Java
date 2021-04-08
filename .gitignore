@@ -3,6 +3,8 @@
 out
 target
 
+data
+
 ### Java ###
 # 编译后的文件
 *.class
